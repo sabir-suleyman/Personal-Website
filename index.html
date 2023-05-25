@@ -173,12 +173,13 @@
                 <a href="assets/Sabir_Süleymanlı.pdf" download class="btn btn2">Download My CV</a>
             </div>
             <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn3">Submit</button>
                     </form>
+                    <span id="msg"> </span>
             </div>
             <div class="copyright">
                 <p>Copyright cumlesi</p>
@@ -187,6 +188,13 @@
     </div>
 </div>
 
+<form name="submit-to-google-sheet">
+    <input name="email" type="email" placeholder="Email" required>
+    <button type="submit">Send</button>
+  </form>
+  
+
+  
 
 </body>
 </html>
