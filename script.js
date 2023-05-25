@@ -15,6 +15,7 @@ function opentab(tabname) {
 
 var sidemenu = Document.getElementById("sidemenu");
 
+/* Çalışmadı daha sonra tekrardan bak!!! */
 
 function openmenu() {
     sidemenu.style.right = "0";    
@@ -23,3 +24,23 @@ function openmenu() {
 function closemenu() {
     sidemenu.style.right = "-200px";  
 }
+
+
+
+/* Google Sheet duzelmedi en kisa zamanda duzelt!!! */
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwwa4zvHjXrkaUB1LMsdKBXdI0Sr9pfZiRMGPjx_IiAFo3h2RmEbUv4dmIgc3j10kMzeA/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg  =Document.getElementById("msg");
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        msg.innerHTML = "Message was sent successfully!"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+})
+    .catch(error => console.error('Error!', error.message))
+})
