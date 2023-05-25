@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabir Süleymanlı</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body>
+
+
+<body>  
     <div id="header">
         <div class="container">
             <nav>
@@ -43,11 +46,11 @@
                    Curabitur nisl massa, interdum sit amet nunc vel, pharetra sagittis nunc. Nulla commodo lectus ipsum, et aliquet 
                    nulla ornare vitae. Praesent vehicula elit eget velit pellentesque, non varius mauris laoreet.</p>
                 <div class="tab-titles">
-                    <p class="tab-links active-link">Skills</p>
-                    <p class="tab-links">Experience</p>
-                    <p class="tab-links">Education</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>1.Skill</span><br>Aciklama</li>
                         <li><span>2.Skill</span><br>Aciklama</li>
@@ -55,7 +58,7 @@
                         <li><span>4.Skill</span><br>Aciklama</li>
                     </ul>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents" id="experience">
                     <ul>
                         <li><span>1.Experience</span><br>Aciklama</li>
                         <li><span>2.Experience</span><br>Aciklama</li>
@@ -63,7 +66,7 @@
                         <li><span>4.Experience</span><br>Aciklama</li>
                     </ul>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents" id="education">
                     <ul>
                         <li><span>1.Education</span><br>Aciklama</li>
                         <li><span>2.Education</span><br>Aciklama</li>
@@ -75,5 +78,36 @@
         </div>
     </div>
 </div>
+
+<!-----services------->
+<div id="services"></div>
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+        <div>
+            <!--icon koy!-->
+            <h2>1.servis</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci tellus, cursus et porta at, tristique id elit.
+                Phasellus vel diam volutpat, mattis massa quis, semper mauris.</p>
+                <a href="#">learn more</a>
+        </div>
+
+        <div>
+            <!--icon koy!-->
+            <h2>2.servis</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci tellus, cursus et porta at, tristique id elit.
+                Phasellus vel diam volutpat, mattis massa quis, semper mauris.</p>
+                <a href="#">learn more</a>
+        </div>
+
+        <div>
+            <!--icon koy!-->
+            <h2>3.servis</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci tellus, cursus et porta at, tristique id elit.
+                Phasellus vel diam volutpat, mattis massa quis, semper mauris.</p>
+                <a href="#">learn more</a>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
