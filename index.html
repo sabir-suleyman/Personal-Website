@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabir Süleymanlı</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+
+    
 </head>
 
 
@@ -15,13 +18,15 @@
         <div class="container">
             <nav>
                 <img src="assets/logo.png" class = "logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li> 
-                    <li><a href="#contact">Contact</a></li>   
+                    <li><a href="#contact">Contact</a></li> 
+                    <i class="fas fa-times" onclick="closemenu()"></i>  
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Software developer/Jr.Frontend Developer</p>
@@ -85,7 +90,7 @@
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
         <div>
-            <!--icon koy!-->
+            <i class="fa-solid fa-code"></i>
             <h2>1.servis</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci tellus, cursus et porta at, tristique id elit.
                 Phasellus vel diam volutpat, mattis massa quis, semper mauris.</p>
@@ -93,7 +98,7 @@
         </div>
 
         <div>
-            <!--icon koy!-->
+            <i class="fa-sharp fa-solid fa-crop"></i>
             <h2>2.servis</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci tellus, cursus et porta at, tristique id elit.
                 Phasellus vel diam volutpat, mattis massa quis, semper mauris.</p>
@@ -101,7 +106,7 @@
         </div>
 
         <div>
-            <!--icon koy!-->
+            <i class="fa-brands fa-google-play"></i>
             <h2>3.servis</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci tellus, cursus et porta at, tristique id elit.
                 Phasellus vel diam volutpat, mattis massa quis, semper mauris.</p>
@@ -122,6 +127,7 @@
                     <h3>1.Başlık</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci tellus, cursus et porta at, tristique id elit.
                         Phasellus vel diam volutpat, mattis massa quis, semper mauris.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></i></a>
                 </div>
            </div>
 
@@ -131,6 +137,7 @@
                 <h3>2.Başlık</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci tellus, cursus et porta at, tristique id elit.
                     Phasellus vel diam volutpat, mattis massa quis, semper mauris.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></i></a>
             </div>
            </div>
 
@@ -140,6 +147,7 @@
                 <h3>3.Başlık</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci tellus, cursus et porta at, tristique id elit.
                     Phasellus vel diam volutpat, mattis massa quis, semper mauris.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
             </div>
            </div>
         </div>
@@ -153,13 +161,14 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p>suleymanli.sabir@anticverse.com</p>
-                <p>+90 552 xxx xx xx</p>
+                <p><i class="fa-solid fa-envelope"></i> suleymanli.sabir@anticverse.com</p>
                 <div class="social-icons">
-                    <a href=""></a>          <!--Social Media Icons-->
-                    <a href=""></a> 
-                    <a href=""></a> 
-                    <a href=""></a>            
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>          <!--Social Media Icons-->
+                    <a href=""><i class="fa-brands fa-github"></i></a> 
+                    <a href=""><i class="fa-brands fa-instagram"></i></a> 
+                    <a href=""><i class="fa-brands fa-medium"></i></a>  
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-square-behance"></i></a>            
                 </div>    
                 <a href="assets/Sabir_Süleymanlı.pdf" download class="btn btn2">Download My CV</a>
             </div>
@@ -177,6 +186,7 @@
         </div>
     </div>
 </div>
+
 
 </body>
 </html>
