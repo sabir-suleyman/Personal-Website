@@ -5,24 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabir Süleymanlı</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
 </head>
-<body>
+
+
+<body>  
     <div id="header">
         <div class="container">
             <nav>
                 <img src="assets/logo.png" class = "logo">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Portfolio</a></li> 
-                    <li><a href="">Contact</a></li>   
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li> 
+                    <li><a href="#contact">Contact</a></li> 
+                    <i class="fas fa-times" onclick="closemenu()"></i>  
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Software developer/Jr.Frontend Developer</p>
-                <h1> Hi, I'm <span>Sabir</span><br> Suleymanli from Azerbaijan </h1>
+                <p> Software developer/Jr.Frontend Developer</p>
+                <h1> Hi, I'm <span class="auto-type">Sabir Süleymanlı</span> <br> from Azerbaijan </h1>
             </div>
         </div>
     </div>
@@ -32,13 +39,164 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="assets/user.jpeg">
+                <img src="assets/user.png">
             </div>
             <div class="about-col-2">
-                <h1>About Me</h1>
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a soph student of Computer Engineering at Uludağ University. With
+                    the knowledge I have, I want to not only stay at this level, but also contribute
+                    to developing technologies and make new inventions in the long term. My
+                    goal is to learn and to experience new things is to improve and do my best.
+                    I have a great interest in web technologies and I try developing myself more
+                    and more in this field. In addition, I am trying to advance in the fields of
+                    artificial intelligence and cyber security.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>1.Skill</span><br>Aciklama</li>
+                        <li><span>2.Skill</span><br>Aciklama</li>
+                        <li><span>3.Skill</span><br>Aciklama</li>
+                        <li><span>4.Skill</span><br>Aciklama</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>April 2023 - Present</span><br>Leader - TECHNOLOGY AND PHILOSOPHY COMMUNITY</li>
+                        <li><span>December 2022 - Present</span><br>Vice Ecol Leader / Board Member - ANTICVERSE WEBRAIDER</li>
+                        <li><span>September 2022 - March 2023</span><br>Co-Leader of Project dep. - GOOGLE DEVELOPER STUDENT CLUBS ULUDAG</li>
+                        <li><span>September 2022 - March 2023</span><br>Co-Leader of Project dep. - ULUDAG SOFTWARE COMMUNITY</li>
+                        <li><span>January 2022 - July 2022</span><br>Clerk of RAS (Robotics & Automation Society) - IEEE STUDENT BRANCH ULUDAG</li>
+                        <li><span>November 2021 - August 2022</span><br>Software Manager of the team - GMT DORA IHA TEKNOFEST TEAM</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>September 2021 - Present</span><br>BURSA ULUDAG UNIVERSITY </li>
+                        <li><span>September 2016 - June 2020</span><br>Chemistry and Biology oriented Republican High School</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+<!-----services------->
+<div id="services"></div>
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>1.servis</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci tellus, cursus et porta at, tristique id elit.
+                Phasellus vel diam volutpat, mattis massa quis, semper mauris.</p>
+                <a href="#">Learn more</a>
+        </div>
+
+        <div>
+            <i class="fa-sharp fa-solid fa-crop"></i>
+            <h2>2.servis</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci tellus, cursus et porta at, tristique id elit.
+                Phasellus vel diam volutpat, mattis massa quis, semper mauris.</p>
+                <a href="#">Learn more</a>
+        </div>
+
+        <div>
+            <i class="fa-brands fa-google-play"></i>
+            <h2>3.servis</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci tellus, cursus et porta at, tristique id elit.
+                Phasellus vel diam volutpat, mattis massa quis, semper mauris.</p>
+                <a href="#">Learn more</a>
+        </div>
+        </div>
+    </div>
+
+<!---------portfolio------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="assets/1work.jpeg" >
+                <div class="layer">
+                    <h3>1.Başlık</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci tellus, cursus et porta at, tristique id elit.
+                        Phasellus vel diam volutpat, mattis massa quis, semper mauris.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></i></a>
+                </div>
+           </div>
+
+           <div class="work">
+            <img src="assets/2work.png" >
+            <div class="layer">
+                <h3>2.Başlık</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci tellus, cursus et porta at, tristique id elit.
+                    Phasellus vel diam volutpat, mattis massa quis, semper mauris.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></i></a>
+            </div>
+           </div>
+
+           <div class="work">
+            <img src="assets/3work.jpg" >
+            <div class="layer">
+                <h3>3.Başlık</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci tellus, cursus et porta at, tristique id elit.
+                    Phasellus vel diam volutpat, mattis massa quis, semper mauris.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+           </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!--------------contact--------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> suleymanli.sabir@anticverse.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sabirs/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>          <!--Social Media Icons-->
+                    <a href="https://github.com/sabir-suleyman" target="_blank"><i class="fa-brands fa-github"></i></a> 
+                    <a href="https://www.instagram.com/sabir_suleyman_/" target="_blank"><i class="fa-brands fa-instagram"></i></a> 
+                    <a href="https://sabirsuleymanli.medium.com/" target="_blank"><i class="fa-brands fa-medium"></i></a>  
+                    <a href="https://twitter.com/SabirSuleyman0" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.behance.net/sabirsleymanl" target="_blank"><i class="fa-brands fa-square-behance"></i></a>            
+                </div>    
+                <a href="assets/Sabir_Süleymanlı.pdf" download class="btn btn2">Download My CV</a>
+            </div>
+            <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                    <span id="msg"> </span>
+            </div>
+            <div class="copyright">
+                <p>"Tüm hakları saklıdır © 2023 Sabir Süleymanlı."</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
+
+<form name="submit-to-google-sheet">
+    <input name="email" type="email" placeholder="Email" required>
+    <button type="submit">Send</button>
+  </form> 
+
+-->
+
 </body>
 </html>
