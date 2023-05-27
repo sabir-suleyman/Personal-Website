@@ -77,7 +77,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-    color: #ff004f;
+    color: #6b1ab8;
 }
 
 /*-------about-------*/
@@ -387,7 +387,7 @@ nav .fas {
 
 @media only screen and (max-width: 800px) {
     #header{
-        background-image: url(assets/for-phone.png);
+        background-image: url(assets/Group\ 8.png);
     }
 
     .header-text{
