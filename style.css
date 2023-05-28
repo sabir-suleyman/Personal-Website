@@ -234,7 +234,7 @@ nav ul li a:hover::after {
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    background: repeating-linear-gradient(rgba(24, 190, 60, 0.6),#3c22b1);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -387,7 +387,7 @@ nav .fas {
 
 @media only screen and (max-width: 800px) {
     #header{
-        background-image: url(assets/Group\ 8.png);
+        background-image: url(assets/responsivebgimage.png);
     }
 
     .header-text{
