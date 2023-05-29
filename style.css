@@ -67,7 +67,7 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 30px;
 }
 
@@ -77,8 +77,45 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-    color: #6b1ab8;
+    color: #7123b9;
 }
+/*  The beginning of scrool efect  */
+
+.text-wrap{
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+    cursor: pointer;
+    }
+
+.main-title {
+    --color1: #7123b9;
+    -webkit-text-stroke: 2px var(--color1);
+    -webkit-text-fill-color: transparent;
+}
+
+.main-title, .hover-title{
+    transition: .5s cubic-bezier(0.7,0.57,0.17,1);
+    
+}
+
+.hover-title{
+    color: var(--color1);
+    position: absolute;
+    transform: translate3d(0,100%,0);
+}
+
+.text-wrap:hover .main-title{
+    transform: translate3d(0,-200%,0);
+    transition-delay: 0.1s; 
+}
+
+.text-wrap:hover .hover-title{
+    transform: translate3d(0,0,0);
+}
+
+/*  The end of scrool efect  */
+
 
 /*-------about-------*/
 
