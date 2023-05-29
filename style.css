@@ -55,7 +55,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #7123b9;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -79,7 +79,7 @@ nav ul li a:hover::after {
 .header-text h1 span {
     color: #7123b9;
 }
-/*  The beginning of scrool efect  */
+/*  The beginning of scrool efect */
 
 .text-wrap{
     position: relative;
@@ -96,7 +96,6 @@ nav ul li a:hover::after {
 
 .main-title, .hover-title{
     transition: .5s cubic-bezier(0.7,0.57,0.17,1);
-    
 }
 
 .hover-title{
@@ -166,7 +165,7 @@ nav ul li a:hover::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #7123b9;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -183,7 +182,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents span {
-    color: #b54769;
+    color: #7123b9;
     font-size: 14px;
 }
 
@@ -236,7 +235,7 @@ nav ul li a:hover::after {
 }
 
 .services-list div:hover{
-    background: #ff004f;
+    background: #7123b9;
     transform: translateY(-10px);
     color: #080808;
 }
@@ -317,7 +316,7 @@ nav ul li a:hover::after {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #7123b9;
     padding: 12px 40px;
     border-radius: 8px;
     text-decoration: none;
@@ -364,7 +363,7 @@ nav ul li a:hover::after {
 }
 
 .social-icons a:hover{
-    color: #ff004f;
+    color: #7123b9;
     transform: translateY(-5px);
 }
 
